@@ -1,0 +1,85 @@
+
+<!--
+Author:Catherine Parker
+Date: October 17, 2024
+File Name: contact.html
+Description: Contact information and form 
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="https://assets.zyrosite.com/YBgrJP4vq6faLP8M/styles-YX4ywNzNRpi6ynbK.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Catherine's Painting Portfolio</title>
+</head>
+<body>
+<header>
+<h1>Catherine Parker</h1>
+</header>
+<nav>
+<ul>
+<li><a href="index.html" target="_blank">Home</a></li>
+<li><a href="about.html" target="_blank">About</a></li>
+<li><a href="gallery.html" target="_blank">Gallery</a></li>
+<li><a href="contact.html" target="_blank">Contact</a></li>
+<li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+<li><a href="terms.html" target="_blank">Terms and Conditions</a></li>
+</ul>
+</nav>
+
+<h2>Contact</h2>
+<br>
+<img src="https://assets.zyrosite.com/YBgrJP4vq6faLP8M/hello2-ALpnGlLBPafyz21g.gif" alt="Hello!">
+<br>
+<p>
+
+    <section>
+        <form method="post" action="response.php" id="contactForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="contactName">Name:</label>
+                <input type="text" name="contactName" id="contactName" placeholder="Enter your name" required>
+                
+                <label for="contactEmail">Email:</label>
+                <input type="email" name="contactEmail" id="contactEmail" placeholder="Enter your email" required>
+                
+                <label>Preferred Medium:</label>
+                <label>
+                    <input type="radio" name="contactMedium" value="oil" required> Oil
+                </label>
+                <label>
+                    <input type="radio" name="contactMedium" value="acrylic"> Acrylic
+                </label>
+                <label>
+                    <input type="radio" name="contactMedium" value="watercolor"> Watercolor
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="artLover" value="yes">
+                    I am an art lover!
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="reason">What brings you here today?</label>
+                <select name="reason" id="reason">
+                    <option value="">Select an option:</option>
+                    <option value="info">I would like to know more about painting techniques</option>
+                    <option value="cert">I am interested in a specific painting</option>
+                    <option value="question">I have a question for the artist</option>
+                    <option value="collab">I would like to propose a collaboration</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="desc">Please elaborate:</label>
+                <textarea name="description" id="desc" rows="5" placeholder="Share your thoughts or questions..."></textarea>
+            </fieldset>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>

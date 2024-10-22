@@ -1,0 +1,241 @@
+<!--
+Author:Catherine Parker
+Date: October 16, 2024
+File Name: styles.css
+Description: CSS for website
+
+https://assets.zyrosite.com/YBgrJP4vq6faLP8M/styles-YlevZ3vOboc7bR27.css
+
+-->
+
+
+<!--Background-->
+
+body {
+    background-color: #807c8f; 
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace; 
+}
+
+/* Header */
+header {
+    background-color: #aeaabf; /* Header background color */
+    color: white; /* Header text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headlines */
+h1 {
+    font-size: 2.5em;
+    color: #000; /* Color for H1 */
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #000; /* Color for H2 */
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.75em;
+    color: #000; /* Color for H3 */
+    margin: 10px 0;
+}
+
+/* Body Text */
+p {
+    font-size: 1em;
+    color: #282829; /* Body text color */
+    line-height: 1.5; /* Line height for better readability */
+    margin: 15px 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Display items in a row */
+    margin-right: 20px; /* Spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Navigation link color */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Navigation hover effects */
+nav ul li a:hover {
+    color: #534887; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #aeaabf; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center; /* Center align text */
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width */
+    font-size: 0.8em; 
+}
+
+/* Anchor Links */
+a {
+    color: #2f2945; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #333; /* Hover state for links */
+}
+
+a:visited {
+    color: #666; /* Visited link color */
+}
+
+a:active {
+    color: #900; /* Active link color */
+}
+
+
+/* Homepage Layout */
+.homepage {
+    margin: 20px; /* Margin around homepage content */
+}
+
+.row {
+    display: flex; /* Use flexbox for row layout */
+    justify-content: space-between; /* Space columns evenly */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.column {
+    flex: 1; /* Flex value for equal width */
+    margin: 10px; /* Margin for spacing */
+}
+
+/* Responsive Design for Homepage */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+}
+
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+img {
+  border: 5px solid #000000;
+  padding: 5px;
+  width: 200px; 
+}
+
+
+
+
+/* General Styles for the Bio Table */
+.bio-table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Removes space between borders */
+}
+
+.bio-table th, .bio-table td {
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 8px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+.bio-table th {
+    background-color: slategray; /* Slate gray background for the header */
+    color: white; /* White text color for header */
+}
+
+/* Media Query for Responsive Table Design */
+@media (max-width: 600px) {
+    .bio-table {
+        font-size: 14px; /* Reduce font size on smaller screens */
+    }
+}
+
+/* Gallery Column Styles */
+.gallery {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Flex items with space in between */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+}
+
+.column {
+    flex: 1 1 45%; /* Flex grow and shrink, with a base width of 45% */
+    margin: 10px; /* Margin around columns */
+}
+
+/* Responsive Image */
+.column img {
+    width: 100%; /* Images take full width of column */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+	/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width for larger screens */
+    margin: auto; /* Center the form */
+}
+
+.contact-form div {
+    margin-bottom: 15px; /* Space between rows */
+}
+
+.contact-form label {
+    font-weight: bold; /* Bold labels */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Make inputs take the full width */
+    padding: 10px; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border style */
+}
+
+/* Button Style */
+.contact-form button {
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-form button:hover {
+    background-color: #333; /* Darker color on hover */
+}
+
